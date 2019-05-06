@@ -1,0 +1,304 @@
+<!-- 
+   Sachin Galahititya
+   C1877565 
+   CMT212 - Visual Communication and Information Design : Coursework 2 
+ -->
+
+<!<!DOCTYPE html>
+
+    <html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>England and the global electric car game</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/skeleton.css">
+        <link rel="stylesheet" href="./css/custom.css">
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+            integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+            crossorigin="" />
+        <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+        <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+     
+
+    </head>
+
+    <body>
+        <div class="topheadder"><strong> Why is UK Falling behind the electric car race?</strong> </div>
+        <img src="./assets/aron-van-de-pol-218042-unsplash.jpg" alt="London">
+        <div class="sources"> Credit : https://unsplash.com/@aronvandepol </div>
+        <div class="bodycontainer">
+            <div class="row">
+                <div class="tweleve columns">
+                    <div class="intro">
+                        <h4> Introduction,</h4>
+                        <p>
+                            The greatest progress in greening the UK has been made in usage and the production of
+                            electricity.
+                            Coal generation has been largely eradicated, as has oil, to be replaced with gas, wind power
+                            and bioenergy.
+                            Throughout the UK Homes and businesses are moving into the use of more and more energy
+                            efficient products and implementations.
+
+                            However the looking at the motorised transport,
+                            it does not seem to be getting any greener continuing to pump out nearly as much
+                            climate-harming pollution as it did three decades ago.
+
+                        </p>
+                        <p>
+                            According to The Society of Motor Manufacturers & Traders (SMMT) 2019 car registrations
+                            report,
+                            Sales of electric cars in the UK have risen by 34% since last year.
+                            While the electric car sales in china were increased by 154%, however the 34% increase is a
+                            significant change
+                            from the 11% of the sales increase noted in the year of 2017 to 2018.
+
+                        </p>
+                        <p>
+                            An analysis of the latest global sales of electric vehicles found that nearly half the
+                            vehicles registered in Norway in the first three months of 2018
+                            were electric (48%). With china leading the electric car race, its important to note how the
+                            sales keep on increasing over the years,
+                            the chart below provides a representation of global electric car sales of a few leading
+                            countries compared with the United Kingdom.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tweleve columns">
+                    <div class="subheading">
+                        <h4> <b> Countries Comparision</b> </h4>
+                    </div>
+
+                    <div class="chart-container">
+                        <canvas id="countries"></canvas>
+                        <div class="sources">
+                            Sources : China [1],
+                            USA [2] ,
+                            NORWAY - [3],
+                            FRANCE - [4],
+                            Netherlands - [5],
+                            Germany - [6],
+                            UK - [7]
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="tweleve columns">
+                    <div class="midText">
+                        <h4> How is UK doing in the electric car race at the moment ?</h4>
+                        <p>
+                            “China and Norway are exceptional in e-mobility. The lead market remains China,
+                            where substantial industrial policy motives are driving battery-electric vehicle
+                            technology forward”Stefan Bratzel of the Centre of Automotive Management (CAM).
+                        </p>
+                        <p>
+                            If china and USA were taken out of the equation for a moment. <i>(The lines can be
+                                removed by clicking on the color on the legend representing of each of the
+                                respective countries)</i> To focus on Europe, its clear that norway is leading
+                            the electric car market in europe by heavy numbers.
+
+                        </p>
+                        <p>
+                            Housing the worlds largest public garage for electric cars, Norway is the largest
+                            European market for both the Nissan Leaf and the Tesla Model S. Norway’s power grid
+                            is exclusively dependant on its hydro power resource. Nearly a third of all new cars
+                            sold in the country this year will be a plug-in model – either fully electric or a
+                            hybrid – and experts expect that share to rise to as much as 40% next year.
+                        </p>
+                        <p>
+                            One of the main reasons for this development in norway, is the backing of the
+                            Norwegian government offering generous incentives and perks for owning an electric
+                            car. Consumers do not have to pay import tax and VAT on plug-in cars, saving
+                            thousands of pounds off the upfront cost. Running costs are lower because
+                            electricity is cheaper than petrol and diesel, while road tax is reduced – and
+                            ultimately dropping to zero next year.
+                        </p>
+                        <p>
+                            Another reason is that it Electric car owners do not pay the road tolls, ferry fees
+                            and city emissions charges that other Norwegians face. Moreover, they can park for
+                            free and bypass traffic by driving in some bus lanes.
+
+                        </p>
+
+                        <p>
+                            Looking at the other countries and where the UK stand right now it needs to be clear
+                            that, Introducing electric cars to the market might need to be done sooner than
+                            expected with the ever rising pollution levels and to keep up with the global
+                            adaptation of electric cars. Taking norway as a example it needs to be understood
+                            that drastic changes like this must be introduced with major support from the
+                            government.
+                        </p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+
+            <div class="subheading">
+                <h4> <b>Car Sales in the UK by fuel type</b> </h4>
+            </div>
+            <div class="chart-container">
+                <canvas id="myChart"></canvas>
+                <div class="sources"> source VEH0253
+                    https://www.gov.uk/government/statistical-data-sets/veh02-licensed-cars </div>
+            </div>
+
+
+            <div class="row">
+                <div class="tweleve columns">
+                    <div class="midText">
+                        <h4> Looking at car sales by the type of fuel in the UK,</h4>
+                        <p>
+                            its very clear that even-though diesel sales have started to show a decline from the
+                            year 2016, there is certainly an upward trend in the sales of the petrol cars.
+
+                        </p>
+
+                        <p>
+                            If petrol and diesel were temporary taken out of the graph for a moment<i>(The lines
+                                can be removed by clicking on the color on the legend representing of each of
+                                the respective fuel type)</i>
+                            It is clear that Hybrid cars have been gaining popularity over its lifetime, mainly
+                            due to the fuel efficiency, however hybrid vehicles still require some kind of a
+                            fuel source to function continuously. Therefore, the increasing trend line in the
+                            hybrid sales may not be the best thing to help the country to plan for a full
+                            electric future by 2030. However promoting plug-in electric cars may immensely
+                            benefit the cause , by making the fuel to electric transition much more easier for
+                            the consumers. Allowing them to prepare for the stop and charge lifestyle.
+                        </p>
+
+                        <p>
+                            Even though the government had introduced many generous incentives and other kinds
+                            of facilities to promote the electric car use, the popularity does not seem to be
+                            getting any better, not even nearly close to norway or china.
+                        </p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="subheading">
+                <h4> <b>Parking and Charging</b> </h4>
+            </div>
+            <div class="canvas-holder">
+                <canvas id="chart-area"></canvas>
+                <div class="sources"> English Housing Survey 2017: stock condition
+                    https://www.gov.uk/government/statistics/english-housing-survey-2016-stock-condition </div>
+
+            </div>
+            <div class="row">
+                <div class="tweleve columns">
+                    <div class="midText">
+                        <h4> Infrastructure,</h4>
+                        <p>
+                            According to the data by the English housing survey 2017 only 38% if homes have
+                            garages, which would be ideal for a home charging station where consumers can charge
+                            their cars overnight make sure their cars are ready to go the next day. The problem
+                            arises when targeting the rest of the consumers, according to a report published by
+                            the ONS (Percentage of households with cars by income group, tenure and household)
+                            78% of the surveyed houses had one or more car(s) registered to each house. Which
+                            means nearly almost all the houses have a car registered to its address.
+
+                        </p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="subheading">
+                <h4> <b> Decline of House Garages</b> </h4>
+            </div>
+            <div class="chart-container">
+                <canvas id="parkingarea"></canvas>
+                <div class="sources"> English Housing Survey 2017: stock condition
+                    https://www.gov.uk/government/statistics/english-housing-survey-2016-stock-condition </div>
+            </div>
+            <div class="row">
+                <div class="tweleve columns">
+                    <div class="midText">
+
+                        <p>
+                            The most common form of parking has been the use of a garage although, overtime the
+                            proportion of homes with a garage has steadily decreased, this is yet another
+                            contributing cause for the infrastructure failure when introducing electric cars.
+                            When more and more people are converting their garages to living spaces, they are
+                            forced to park outside the street or use a parking facility. With very limited
+                            charging points available all around, in terms of a using an electric car is just
+                            not feasible .
+
+                        </p>
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="subheading">
+            <h4> <b>Charging Station counts of main cities in the UK</b> </h4>
+        </div>
+        <div class="mapcontainer">
+            <div id="mapid"></div>
+            <div class="sources"> Data Source : BBC [12] </div>
+
+        </div>
+        <div class="row">
+            <div class="tweleve columns">
+                <div class="midText">
+                    <h4> Number of Charging stations not ready to meet demands,</h4>
+                    <p>
+                        In total, there just over 7000 public charging points in the UK, however this is no where
+                        near enough to satisfy or to convince a person to go ahead with an electric car purchase,
+                        according a analysis carried out by the BBC, to Out of 385 authorities surveyed, only three
+                        had 100 or more charging locations. Milton Keynes was found to be leading the way with 138,
+                        followed by Westminster with 131 and Cornwall with 115. Overall, two thirds of local
+                        authorities were found to have 20 or fewer. Only one charging location was identified in
+                        Merthyr Tydfil, Caerphilly, North Dorset and Hinckley and Bosworth.
+                    </p>
+                    <br />
+                </div>
+            </div>
+        </div>
+        <div class="subheading">
+            <h4> <b>Conclusion</b> </h4>
+        </div>
+        <div class="row">
+            <div class="tweleve columns">
+                <div class="midText">
+
+                    <p>
+                        In order to provide a smooth transition, the charging network must be widespread and more
+                        reliable, since lack of charging points happens to be one of the main reasons why consumers
+                        are afraid or not wanting to move to an electric vehicle. Also, with the phasing out of the
+                        petrol and diesel cars it needs to understood that there are over 18.5million Petrol cars
+                        and 12.4 million diesel cars on the UK roads today. Therefore during the upcoming years the
+                        electric charging point infrastructure in the UK must be ready to facilitate the massive
+                        transition of petrol and diesel vehicles to full-electric. </p>
+                    <br />
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </body>
+    
+    <script src='./js/data.js'></script>
+    <script src='./js/charts.js'></script>
+    
+    <script src="./js/mapdata.js"></script>
+
+
+    </html>
